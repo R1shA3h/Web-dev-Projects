@@ -1,0 +1,41 @@
+.color-title {
+    font-weight: normal;
+}
+
+#red {
+    font-family: 'Source Code Pro', monospace;
+    color: red;
+}
+
+#blue {
+    border: 10px solid #000;
+    border-color: black;
+    border-width: 10px 30px;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(0, 179, 255);
+}
+
+#orange {
+    font-family: 'Source Code Pro', monospace;
+    color: orange;
+}
+
+#green {
+    font-family: 'Source Code Pro', monospace;
+    color: green;
+}
+
+#yellow {
+    font-family: 'Source Code Pro', monospace;
+    color: yellow;
+}
+
+img {
+    font-family: 'Source Code Pro', monospace;
+    width: 200px;
+    height: 200px;
+}
+
+* {
+    text-align: center;
+}
