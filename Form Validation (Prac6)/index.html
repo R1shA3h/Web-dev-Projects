@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="body">
+<form action="" name="myform" id="myform" onsubmit="validation(event)">
+<div class="section">
+    <h2>Personal Information</h2>
+<label for="" >Name: <input type="text" name="name"></label><br><br>
+<label for="" >Email: <input type="text" name="email"></label><br><br>
+<label>DOB:<input type="date" name="DOB"></label><br><br>
+<label>Phone No:<input type="text" name="num"></label>
+<br><br> 
+</div>
+<div class="section">
+    <h2>Educational Information</h2>
+    <label for="">X marks:<input type="text" name="tenth" required></label>
+    <br><br>
+    <label for="">XII marks:<input type="text" name="twelveth"required></label>
+    <br><br>
+    <label for="">College marks:<input  name="clg" type="text"></label>
+    <br><br>
+    <label for="">University marks:<input type="text"  name="uni"  ></label>
+    <br><br>
+</div> 
+
+ <div class="section">
+    <h2>Payment Details</h2>
+    <label for="">Payment Methods:<select name="select">
+        <option value="" >Card</option>
+        <option value="" >UPI Payment</option>
+    </select>
+</label>
+<br><br>
+   <div class="card-details">
+    <label for="">Card Number: <input type="text" name="card"></label>
+   </div>
+   <br>
+   <div class="upi-details">
+    <label for="">UPI ID: <input type="text" name="upi"></label>
+   </div>
+</div>
+<br><br>
+<button type="submit" onclick="Validation(e)">submit</button><br><br>
+</form>
+
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
