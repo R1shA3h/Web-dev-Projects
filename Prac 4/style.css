@@ -1,0 +1,104 @@
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+.buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+}
+
+.button {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal {
+    background-color: rgb(85, 85, 255);
+    color: white;
+}
+
+.button:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+/*
+.structure{
+    background-color: black;
+    height: auto;
+    width: auto;
+    display: flex;
+}
+
+.Answer{
+    border-color: black;
+    height: 100px;
+    width: 200px;
+    background-color: aliceblue;
+}
+.Buttons{
+    padding: 0px;
+    margin: 0px;
+    border-color : rgb(35, 35, 252);
+    color: rgb(35, 35, 252);
+    height: 36px;
+    width: 55px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 8px;
+
+}
+.Buttons:hover{
+    background-color:rgb(35, 35, 252);
+    color: white;
+    transition: background-color 1s;
+        color: 1s;
+    box-shadow: 10px 10px 10px black;
+}
+.Buttons:active{
+    opacity: 0.7;
+}
+
+.first_row{
+    padding: 5px;
+}
+
+.second_row{
+background-color: bisque;
+}
+
+.third_row{
+background-color: green;
+}
+
+.fourth_row{
+background-color: black;
+}
+
+.fifth_row{
+    background-color: blue;
+
+} */
