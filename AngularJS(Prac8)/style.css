@@ -1,0 +1,26 @@
+/* Heading styles */
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* List item styles */
+  .name {
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+  }
+  
+  .exp,
+  .gender,
+  .qualification {
+    margin-bottom: 5px;
+  }
+  
+  /* Background color for even list items */
+  ul:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

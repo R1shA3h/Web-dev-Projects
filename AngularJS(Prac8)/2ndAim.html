@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <div class="heading">
+        <h2>CSE FACULTIES OF RCOEM</h2>
+      </div>
+
+      <ul ng-repeat="teacher in teachers">
+        <li class="name">{{teacher.name}}</li>
+        <li class="description">{{teacher.dis}}</li>
+        <li class="exp">{{teacher.exp}}</li>
+        <li class="gender">{{teacher.gen}}</li>
+        <li class="qualification">{{teacher.qua}}</li>
+      </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+      var app = angular.module("myApp", []);
+      app.controller("myCtrl", function ($scope) {
+        $scope.teachers = [
+          {
+            name: "Prof. Avinash J Agrawal",
+            pos: "Associate Professor & Head of Department, Department of Computer Science & Engineering",
+            gen: "Male",
+            exp: "22 years",
+            dis: "Total Experience in Years - Teaching : 23.8 / Industrial : 0.0 / Research : 0.0 Subject Specialization : Information Retrieval, NLP, Pattern Recognition Compiling for High Performance Architecture, Language Processors, Artificial Intelligence, Theoretical Computation, Mobile Application Design",
+            qua: "M.Tech and Phd",
+          },
+          {
+            name: "Dr. Manoj B Chandak",
+            pos: "Professor, Department of Computer Science & Engineering",
+            gen: "Male",
+            exp: "Total Experience in Years - Teaching : 25.1 / Industrial : 0.0 / Research : 0.0 Subject Specialization : Design and Analysis of Algorithms Language Processing Analysis of Algorithms Computer Graphics Real Time Operating Systems Operating System Design",
+            dis: "",
+            qua: "MTech and Ph.D.",
+          },
+          {
+            name: "Prof. Aarti Manish Karandikar",
+            pos: "Assistant Professor, Department of Computer Science & Engineering",
+            gen: "Female",
+            exp: "Total Experience in Years - Teaching : 18.0 / Industrial : 0.0 / Research : 0.0 Subject Specialization : Data warehousing and mining, Distributed Systems",
+            dis: "",
+            qua: "M.Tech and Ph.D. Registered",
+          },
+          {
+            name: "Dr. Ramchand Hablani",
+            pos: "Associate Professor, Department of Computer Science & Engineering",
+            gen: "Male",
+            exp: "Total Experience in Years - Teaching : 23.3 / Industrial : 0.0 / Research : 1.0 Subject Specialization : Artificial Intelligence, Machine Learning, Soft Computing,Digital Image Processing,Computer Vision, Robotics,Discrete Mathematics",
+            dis: "",
+            qua: "ME and Ph.D.",
+          },
+          {
+            name: "Prof. Praful Rameshrao Pardhi",
+            pos: "Assistant Professor, Department of Computer Science & Engineering",
+            gen: "Male",
+            exp: "Total Experience in Years - Teaching : 16.9 / Industrial : 0.0 / Research : 0.0 Subject Specialization : Cryptography & Network Security. ,Advanced Computer architecture, Malware Analysis",
+            dis: "",
+            qua: "M.Tech and Ph.D. Registered",
+          },
+          {
+            name: "Prof. Shubhangi Charandas Tirpude",
+            pos: "Assistant Professor, Department of Computer Science & Engineering",
+            gen: "Female",
+            exp: "Total Experience in Years - Teaching : 15.0 / Industrial : 0.0 / Research : 0.0 Subject Specialization : Computer Graphics & GUI Design Language processors Distributed & Parallel Databases Natural Language Processing Theoretical Foundation of Computer Science For Course Material: Visit Here",
+            dis: "",
+            qua: "MTech",
+          },
+          {
+            name: "Dr. Rashmi Rajesh Welekar",
+            pos: "Assistant Professor, Department of Computer Science & Engineering",
+            gen: "Female",
+            exp: "Total Experience in Years - Teaching : 18.0 / Industrial : 3.1 / Research : 12.0 Subject Specialization : Data Mining, Data Warehousing, Big Data, Machine Learning, Artificial Intelligence, Deep Learning",
+            dis: "",
+            qua: "M.Tech. (CSE) PhD (CSE)",
+          },
+          {
+            name: "Prof. S. P. Hanchate",
+            pos: "Assistant Professor, Department of Computer Science & Engineering",
+            gen: "Male",
+            exp: "Total Experience in Years - Teaching : 26.2 / Industrial : 0.0 / Research : 0.0 Subject Specialization : Web Technology",
+            dis: "",
+            qua: "MTech",
+          },
+          {
+            name: "Dr. Rizwana Qutubuddin Shaikh",
+            pos: "Assistant Professor, Department of Computer Science & Engineering",
+            gen: "Female",
+            exp: "Total Experience in Years - Teaching : 11.2 / Industrial : 0.0 / Research : 4.0 Subject Specialization : Data Mining, Artificial Intelligence",
+            dis: "",
+            qua: "M.Tech. (CSE), Ph.D. (CSE)",
+          },
+          {
+            name: "Prof. Sanjay Bhausaheb Shinde",
+            pos: "Assistant Professor, Department of Computer Science & Engineering",
+            gen: "Male",
+            exp: "Total Experience in Years - Teaching : 20.0 / Industrial : 0.0 / Research : 0.0 Subject Specialization : Data Structures, Big Data Analytics, Operating Systems",
+            dis: "",
+            qua: "MTech",
+          },
+        ];
+      });
+    </script>
+  </body>
+</html>
