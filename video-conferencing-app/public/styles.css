@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #login,
+  #conference {
+    display: none;
+    text-align: center;
+  }
+  
+  #videoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  video {
+    width: 250px;
+    margin: 10px;
+  }
+  
+  #participants {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #chatContainer {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  #chatMessages {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #messageInput {
+    width: 70%;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  #sendBtn {
+    padding: 5px 10px;
+  }
+  

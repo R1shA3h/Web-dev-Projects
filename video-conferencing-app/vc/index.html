@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Call Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    #videoContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #roomContainer {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    #roomInput {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    #joinButton,
+    #createButton {
+      margin-left: 10px;
+    }
+
+    .error-message {
+      color: #f00;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Video Call Website</h1>
+  <div id="videoContainer">
+    <video id="localVideo" autoplay></video>
+    <video id="remoteVideo" autoplay></video>
+  </div>
+  <button id="startButton">Start Call</button>
+  <button id="endButton">End Call</button>
+  <div id="roomContainer">
+    <input type="text" id="roomInput" placeholder="Enter Room Name">
+    <button id="joinButton">Join Room</button>
+    <button id="createButton">Create Room</button>
+    <p id="errorMessage" class="error-message"></p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
